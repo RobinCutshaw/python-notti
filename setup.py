@@ -1,23 +1,21 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import re
-from setuptools import setup, find_packages
-import sys
-import warnings
+import setuptools
 
 dynamic_requires = []
 
-version = 0.1
+version = 1.0
 
-setup(
+setuptools.setup(
     name='notti',
-    version=0.1,
+    version=1.0,
     author='Robin Cutshaw',
     author_email='robin@internetlabs.com',
     url='http://github.com/RobinCutshaw/python-notti',
-    packages=find_packages(),
+    packages=setuptools.find_packages(),
     scripts=[],
+    long_description='A Python API for controlling Notti lights manufactured by Witti',
     description='Python API for controlling Notti lights',
     classifiers=[
         'Development Status :: 4 - Beta',
